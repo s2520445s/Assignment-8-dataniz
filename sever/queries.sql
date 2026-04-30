@@ -8,3 +8,12 @@ SELECT * FROM sensor_data_virtual LIMIT 5;
 SELECT payload::json->>'Moisture Meter - moisture'
 FROM sensor_data_virtual
 LIMIT 10;
+
+SELECT AVG((payload::json->>'Moisture Meter - moisture')::float) AS avg_moisture
+FROM sensor_data_virtual;
+
+SELECT AVG((payload::json->>'water_usage')::float) AS avg_water
+FROM sensor_data_virtual;
+
+SELECT AVG((payload::json->>'current')::float) AS avg_energy
+FROM sensor_data_virtual;
