@@ -28,3 +28,4 @@ SELECT * FROM sensor_data_virtual LIMIT 5;
 
 ## Authors
 Barry Lin
+Raul Rendon
