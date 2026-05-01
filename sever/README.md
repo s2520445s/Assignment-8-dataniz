@@ -27,5 +27,6 @@ SELECT * FROM sensor_data_virtual LIMIT 5;
 3. Run SQL queries in NeonDB
 
 ## Authors
-Barry Lin;
+Barry Lin
+
 Raul Rendon
